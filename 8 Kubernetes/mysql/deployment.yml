@@ -1,10 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: mysql-dep
   namespace: mysql
   labels:
     app: mysql
+    
 spec:
   replicas: 2
   selector:
@@ -26,3 +28,9 @@ spec:
                 secretKeyRef:
                   name: mysql-secret
                   key: password
+
+            - name: MYSQL_DATABASE
+              valueFrom: 
+                configMapKeyRef:
+                  name: mysql-config-map
+                  key: database
