@@ -1,3 +1,6 @@
 Try installing helm3 or above version
 
 Learn to uninstall helm
+
+
+https://opensource.com/article/19/6/jenkins-admin-password-helm-kubernetes
