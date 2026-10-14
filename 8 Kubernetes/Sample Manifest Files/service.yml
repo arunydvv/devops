@@ -20,4 +20,4 @@ spec:
 
       # Port on the Pod container where the application is actually listening
       # Traffic received on Service port 80 is forwarded to this container port
-      targetPort: 9376
+      targetPort: 80

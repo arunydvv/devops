@@ -440,3 +440,11 @@ Do not assume that terminating the instance removes every resource. Inspect asso
 6. Keep the private SSH key secret and retain the public key for importing into Floci.
 
 **Result:** You have configured Floci, imported an SSH key pair, launched a local EC2 instance, connected to it from Windows PowerShell over SSH, and learned how to terminate it.
+
+
+
+
+
+
+1. Compose up
+2. ssh -i "$env:USERPROFILE\.ssh\floci-key" -p 2200 root@127.0.0.1
